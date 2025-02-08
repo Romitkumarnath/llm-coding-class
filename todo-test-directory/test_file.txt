@@ -1,0 +1,5 @@
+This file contains a TODO here.
+
+This line does NOT contain a to-do (note the - that doesn't count).
+
+todo but this line does contain a TODO (lowercase still counts).
