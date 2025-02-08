@@ -1,0 +1,14 @@
+{
+    "workbench.editorAssociations": {
+        "*.py": "default"
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "workbench.startupEditor": "none"
+}

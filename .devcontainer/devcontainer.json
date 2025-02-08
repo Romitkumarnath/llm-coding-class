@@ -1,5 +1,5 @@
 {
-    "name": "Python Classroom Environment",
+    "name": "Python LLM Class",
     "image": "mcr.microsoft.com/devcontainers/python:3.13",
     
     "customizations": {
@@ -7,19 +7,16 @@
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "ms-toolsai.jupyter"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/usr/local/bin/python",
-                "python.linting.enabled": true,
-                "python.formatting.provider": "ruff"
-            }
+                "python.linting.enabled": true
+            },
+            "onCreateCommand": "code hello.py"
         }
     },
     
     "postCreateCommand": "pip install -r requirements.txt",
-    
-    "forwardPorts": [8888],
     
     "remoteUser": "vscode"
 }
