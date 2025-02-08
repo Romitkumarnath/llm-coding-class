@@ -1,22 +1,19 @@
 {
     "name": "Python LLM Class",
     "image": "mcr.microsoft.com/devcontainers/python:3.13",
-    
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
-                "ms-python.vscode-pylance",
+                "ms-python.vscode-pylance"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/usr/local/bin/python",
                 "python.linting.enabled": true
-            },
-            "onCreateCommand": "code hello.py"
+            }
         }
     },
-    
     "postCreateCommand": "pip install -r requirements.txt",
-    
+    "postAttachCommand": "code hello.py",
     "remoteUser": "vscode"
 }
