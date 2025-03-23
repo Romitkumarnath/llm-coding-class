@@ -11,8 +11,9 @@ greetings = [
     "Well hello, fancy meeting you here!",
     "G'day mate!",
     "Howdy, partner!",
-    "Welcome aboard the code express!"
-]
+    "Welcome aboard the code express!",
+    "Welcome aboard the code express again!"
+    ]
 
 def get_random_greeting():
     return random.choice(greetings)
