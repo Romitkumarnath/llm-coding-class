@@ -1,4 +1,6 @@
 import random
+import unittest
+import sys
 
 greetings = [
     "Hello there, wonderful world!",
@@ -19,4 +21,13 @@ def get_random_greeting():
     return random.choice(greetings)
 
 if __name__ == "__main__":
+    # Run the greeting
+    print("\n=== Running the greeting program ===")
     print(get_random_greeting())
+    
+    # Run the tests
+    print("\n=== Running the tests ===")
+    test_loader = unittest.TestLoader()
+    test_suite = test_loader.discover('.', pattern='test_*.py')
+    runner = unittest.TextTestRunner(verbosity=2)
+    runner.run(test_suite)
