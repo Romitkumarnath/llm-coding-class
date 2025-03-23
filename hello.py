@@ -12,7 +12,7 @@ greetings = [
     "G'day mate!",
     "Howdy, partner!",
     "Welcome aboard the code express!",
-    "Welcome aboard the code express again!"
+    "Welcome aboard the code express again !"
     ]
 
 def get_random_greeting():
